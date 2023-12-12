@@ -1,0 +1,8 @@
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--prefix=/home/sh/httpd-2.4.49-trace" \
+"--with-apr=/home/sh/rca_httpd/httpd/apr-1.6.5" \
+"$@"

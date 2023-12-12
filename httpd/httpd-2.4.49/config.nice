@@ -1,0 +1,20 @@
+#! /bin/sh
+#
+# Created by configure
+
+CFLAGS="  -march=skylake -g -ggdb -fno-builtin -fno-inline"; export CFLAGS
+LDFLAGS="  -march=skylake -g -ggdb -fno-builtin -fno-inline"; export LDFLAGS
+LIBS="-L/home/sh/rca_httpd/httpd/apr-1.6.5/.libs -L/home/sh/rca_httpd/httpd/apr-util-1.6.3/.libs -L/home/sh/rca_httpd/httpd/pcre-8.00/.libs "; export LIBS
+"./configure" \
+"--enable-unixd" \
+"--disable-pie" \
+"--enable-mods-static=few" \
+"--prefix=/home/sh/httpd-2.4.49-trace" \
+"--with-mpm=event" \
+"--with-apr=/home/sh/rca_httpd/httpd/apr-1.6.5" \
+"--with-apr-util=/home/sh/rca_httpd/httpd/apr-util-1.6.3" \
+"--with-pcre=/home/sh/rca_httpd/httpd/pcre-8.00/pcre-config" \
+"CFLAGS= -march=skylake -g -ggdb -fno-builtin -fno-inline" \
+"LDFLAGS= -march=skylake -g -ggdb -fno-builtin -fno-inline" \
+"LIBS=-L/home/sh/rca_httpd/httpd/apr-1.6.5/.libs -L/home/sh/rca_httpd/httpd/apr-util-1.6.3/.libs -L/home/sh/rca_httpd/httpd/pcre-8.00/.libs" \
+"$@"

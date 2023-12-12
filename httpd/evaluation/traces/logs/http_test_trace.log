@@ -1,0 +1,211 @@
+Pin: pin-3.28-98749-6643ecee5
+Copyright 2002-2023 Intel Corporation.
+ [tid:436019] [*] Pintool: /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so
+ [tid:436019] [*] Target:  /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/intel64/bin/pinbin
+ [tid:436019] [+] Called parse_image on /home/sh/httpd-2.4.49-trace/bin/httpd
+ [tid:436019] [*] Image base: 0x0000555555554000
+ [tid:436019] [*] Load offset: 0x0000555555554000
+ [tid:436019] [*] Image entry address: 0x0000555555590d00
+ [tid:436019] [*] First instruction address: 0x0000555555590d00
+ [tid:436019] [*] Heap: 0x555555632000 - 0x555555635000
+ [tid:436019] [*] Stack: 0x7ffffffde000 - 0x7ffffffff000
+ [tid:436019] [+] Called parse_image on /lib64/ld-linux-x86-64.so.2
+ [tid:436019] [+] Called parse_image on [vdso]
+ [tid:436019] [+] Called parse_image on /home/sh/httpd-2.4.49-trace/lib/libpcre.so.0
+ [tid:436019] [+] Called parse_image on /home/sh/httpd-2.4.49-trace/lib/libaprutil-1.so.0
+ [tid:436019] [+] Called parse_image on /home/sh/httpd-2.4.49-trace/lib/libapr-1.so.0
+ [tid:436019] [+] Called parse_image on /lib/x86_64-linux-gnu/libc.so.6
+ [tid:436019] [+] Called parse_image on /lib/x86_64-linux-gnu/libexpat.so.1
+ [tid:436019] [+] Called parse_image on /lib/x86_64-linux-gnu/libcrypt.so.1
+ [tid:436101] [+] Called parse_image on /lib/x86_64-linux-gnu/libgcc_s.so.1
+ [tid:436022] [*] Last instruction: 0x000055555558eb94
+ [tid:436022] [+] Called jsonify
+ [tid:436022] [*] Written Bytes: 0x000000000000006a
+ [tid:436022] [*] Written Bytes: 0x0000000000000723
+ [tid:436022] [*] Written Bytes: 0x00000000000230ae
+ [tid:436022] [*] Written Bytes: 0x00000000000456c2
+ [tid:436022] [*] Written Bytes: 0x00000000000599d4
+ [tid:436022] [*] Written Bytes: 0x000000000006bc76
+ [tid:436022] [*] Written Bytes: 0x0000000000094fe6
+ [tid:436022] [*] Written Bytes: 0x00000000000ca4bc
+ [tid:436022] [*] Written Bytes: 0x000000000010a893
+ [tid:436022] [*] Written Bytes: 0x0000000000134353
+ [tid:436022] [*] Written Bytes: 0x00000000001707f4
+ [tid:436022] [*] Written Bytes: 0x000000000019ccf9
+ [tid:436022] [*] Written Bytes: 0x00000000001bbb4f
+ [tid:436022] [*] Written Bytes: 0x00000000001ce00e
+ [tid:436022] [*] Written Bytes: 0x00000000001ee7f1
+ [tid:436022] [*] Written Bytes: 0x00000000002332bf
+ [tid:436022] [*] Written Bytes: 0x000000000024372b
+ [tid:436022] [*] Written Bytes: 0x000000000026c9bf
+ [tid:436022] [*] Written Bytes: 0x0000000000281458
+ [tid:436022] [*] Written Bytes: 0x0000000000295dc5
+ [tid:436022] [*] Written Bytes: 0x00000000002a6e94
+ [tid:436022] [*] Written Bytes: 0x00000000002bf6f3
+ [tid:436022] [*] Written Bytes: 0x00000000002d4d98
+ [tid:436022] [*] Written Bytes: 0x00000000002f5ed1
+ [tid:436022] [*] Written Bytes: 0x000000000030986e
+ [tid:436022] [*] Written Bytes: 0x00000000003208f8
+ [tid:436022] [*] Written Bytes: 0x0000000000337544
+ [tid:436022] [*] Written Bytes: 0x000000000034b086
+ [tid:436022] [*] Written Bytes: 0x000000000036d63b
+ [tid:436022] [*] Written Bytes: 0x000000000038fcfd
+ [tid:436022] [*] Written Bytes: 0x00000000003a4b66
+ [tid:436022] [*] Written Bytes: 0x00000000003c4da4
+ [tid:436022] [*] Written Bytes: 0x00000000003e06bf
+ [tid:436022] [*] Written Bytes: 0x00000000003fe3e0
+ [tid:436022] [*] Written Bytes: 0x0000000000411610
+ [tid:436022] [*] Written Bytes: 0x000000000042f990
+ [tid:436022] [*] Written Bytes: 0x000000000045648f
+ [tid:436022] [*] Written Bytes: 0x000000000046476e
+ [tid:436022] [*] Written Bytes: 0x000000000047481a
+ [tid:436022] [*] Written Bytes: 0x00000000004a03c9
+ [tid:436022] [*] Written Bytes: 0x00000000004b95d4
+ [tid:436022] [*] Written Bytes: 0x00000000004e74de
+ [tid:436022] [*] Written Bytes: 0x0000000000505b9f
+ [tid:436022] [*] Written Bytes: 0x0000000000522e16
+ [tid:436022] [*] Written Bytes: 0x00000000005361bf
+ [tid:436022] [*] Written Bytes: 0x0000000000562dbf
+ [tid:436022] [*] Written Bytes: 0x0000000000598f84
+ [tid:436022] [*] Written Bytes: 0x00000000005d2ce8
+ [tid:436022] [*] Written Bytes: 0x00000000005fe9eb
+ [tid:436022] [*] Written Bytes: 0x00000000006169c1
+ [tid:436022] [*] Written Bytes: 0x000000000062ba11
+ [tid:436022] [*] Written Bytes: 0x000000000063ac4a
+ [tid:436022] [*] Written Bytes: 0x000000000064e031
+ [tid:436022] [*] Written Bytes: 0x000000000065df49
+ [tid:436022] [*] Written Bytes: 0x0000000000671f68
+ [tid:436022] [*] Written Bytes: 0x000000000068637f
+ [tid:436022] [*] Written Bytes: 0x0000000000695e6a
+ [tid:436022] [*] Written Bytes: 0x00000000006a77ad
+ [tid:436022] [*] Written Bytes: 0x00000000006b82d1
+ [tid:436022] [*] Written Bytes: 0x00000000006cd280
+ [tid:436022] [*] Written Bytes: 0x00000000006dca88
+ [tid:436022] [*] Written Bytes: 0x00000000006eec10
+ [tid:436022] [*] Written Bytes: 0x0000000000700f89
+ [tid:436022] [*] Written Bytes: 0x0000000000719a29
+ [tid:436022] [*] Written Bytes: 0x000000000073a3a8
+ [tid:436022] [*] Written Bytes: 0x0000000000750cd7
+ [tid:436022] [*] Written Bytes: 0x00000000007688c9
+ [tid:436022] [*] Written Bytes: 0x000000000077d236
+ [tid:436022] [*] Written Bytes: 0x000000000078b9bd
+ [tid:436022] [*] Written Bytes: 0x000000000079c333
+ [tid:436022] [*] Written Bytes: 0x00000000007b8252
+ [tid:436022] [*] Written Bytes: 0x00000000007cdeac
+ [tid:436022] [*] Written Bytes: 0x00000000007f6a06
+ [tid:436022] [*] Written Bytes: 0x0000000000812e9c
+ [tid:436022] [*] Written Bytes: 0x000000000082be16
+ [tid:436022] [*] Written Bytes: 0x000000000083f3b5
+ [tid:436022] [*] Written Bytes: 0x000000000085483a
+ [tid:436022] [*] Written Bytes: 0x0000000000867ac9
+ [tid:436022] [*] Written Bytes: 0x000000000087916e
+ [tid:436022] [*] Written Bytes: 0x0000000000893e9c
+ [tid:436022] [*] Written Bytes: 0x00000000008ae4f9
+ [tid:436022] [*] Written Bytes: 0x00000000008bc649
+ [tid:436022] [*] Written Bytes: 0x00000000008d856c
+ [tid:436022] [*] Written Bytes: 0x00000000008e93c7
+ [tid:436022] [*] Written Bytes: 0x000000000090a901
+ [tid:436022] [*] Written Bytes: 0x0000000000929378
+ [tid:436022] [*] Written Bytes: 0x0000000000937b05
+ [tid:436022] [*] Written Bytes: 0x0000000000949eec
+ [tid:436022] [*] Written Bytes: 0x000000000095a448
+ [tid:436022] [*] Written Bytes: 0x0000000000969c03
+ [tid:436022] [*] Written Bytes: 0x0000000000969eff
+ [tid:436022] [*] Written Bytes: 0x000000000096db35
+ [tid:436022] [*] Written Bytes: 0x000000000097175b
+ [tid:436022] [*] Written Bytes: 0x0000000000975393
+ [tid:436022] [*] Written Bytes: 0x0000000000978fb0
+ [tid:436022] [*] Written Bytes: 0x000000000097cbe0
+ [tid:436022] [*] Written Bytes: 0x0000000000980799
+ [tid:436022] [*] Written Bytes: 0x000000000098432e
+ [tid:436022] [*] Written Bytes: 0x0000000000987ec8
+ [tid:436022] [*] Written Bytes: 0x000000000098bab1
+ [tid:436022] [*] Written Bytes: 0x000000000098f837
+ [tid:436022] [*] Written Bytes: 0x000000000099352d
+ [tid:436022] [*] Written Bytes: 0x0000000000997160
+ [tid:436022] [*] Written Bytes: 0x000000000099adb8
+ [tid:436022] [*] Written Bytes: 0x000000000099e969
+ [tid:436022] [*] Written Bytes: 0x00000000009a2513
+ [tid:436022] [*] Written Bytes: 0x00000000009a60a0
+ [tid:436022] [*] Written Bytes: 0x00000000009a9c61
+ [tid:436022] [*] Written Bytes: 0x00000000009ad931
+ [tid:436022] [*] Written Bytes: 0x00000000009b1536
+ [tid:436022] [*] Written Bytes: 0x00000000009b50cb
+ [tid:436022] [*] Written Bytes: 0x00000000009b8cbc
+ [tid:436022] [*] Written Bytes: 0x00000000009bc867
+ [tid:436022] [*] Written Bytes: 0x00000000009c03e8
+ [tid:436022] [*] Written Bytes: 0x00000000009c3f5e
+ [tid:436022] [*] Written Bytes: 0x00000000009c7ad3
+ [tid:436022] [*] Written Bytes: 0x00000000009cb6a4
+ [tid:436022] [*] Written Bytes: 0x00000000009cf24d
+ [tid:436022] [*] Written Bytes: 0x00000000009d2db7
+ [tid:436022] [*] Written Bytes: 0x00000000009d6989
+ [tid:436022] [*] Written Bytes: 0x00000000009da52c
+ [tid:436022] [*] Written Bytes: 0x00000000009de08f
+ [tid:436022] [*] Written Bytes: 0x00000000009e1ce2
+ [tid:436022] [*] Written Bytes: 0x00000000009e587b
+ [tid:436022] [*] Written Bytes: 0x00000000009e940c
+ [tid:436022] [*] Written Bytes: 0x00000000009ecfb3
+ [tid:436022] [*] Written Bytes: 0x00000000009f0b6d
+ [tid:436022] [*] Written Bytes: 0x00000000009f46fd
+ [tid:436022] [*] Written Bytes: 0x00000000009f827f
+ [tid:436022] [*] Written Bytes: 0x00000000009fbe5c
+ [tid:436022] [*] Written Bytes: 0x00000000009ff9df
+ [tid:436022] [*] Written Bytes: 0x0000000000a0359d
+ [tid:436022] [*] Written Bytes: 0x0000000000a0711c
+ [tid:436022] [*] Written Bytes: 0x0000000000a0ad51
+ [tid:436022] [*] Written Bytes: 0x0000000000a0e936
+ [tid:436022] [*] Written Bytes: 0x0000000000a125d1
+ [tid:436022] [*] Written Bytes: 0x0000000000a16183
+ [tid:436022] [*] Written Bytes: 0x0000000000a19d41
+ [tid:436022] [*] Written Bytes: 0x0000000000a1d8fb
+ [tid:436022] [*] Written Bytes: 0x0000000000a21480
+ [tid:436022] [*] Written Bytes: 0x0000000000a250c2
+ [tid:436022] [*] Written Bytes: 0x0000000000a28d20
+ [tid:436022] [*] Written Bytes: 0x0000000000a2c993
+ [tid:436022] [*] Written Bytes: 0x0000000000a3056e
+ [tid:436022] [*] Written Bytes: 0x0000000000a340fd
+ [tid:436022] [*] Written Bytes: 0x0000000000a37c93
+ [tid:436022] [*] Written Bytes: 0x0000000000a3b81d
+ [tid:436022] [*] Written Bytes: 0x0000000000a3f388
+ [tid:436022] [*] Written Bytes: 0x0000000000a42f0f
+ [tid:436022] [*] Written Bytes: 0x0000000000a46aaa
+ [tid:436022] [*] Written Bytes: 0x0000000000a4a65b
+ [tid:436022] [*] Written Bytes: 0x0000000000a4e1df
+ [tid:436022] [*] Written Bytes: 0x0000000000a51d7f
+ [tid:436022] [*] Written Bytes: 0x0000000000a5591d
+ [tid:436022] [*] Written Bytes: 0x0000000000a594c7
+ [tid:436022] [*] Written Bytes: 0x0000000000a5d0b5
+ [tid:436022] [*] Written Bytes: 0x0000000000a60c66
+ [tid:436022] [*] Written Bytes: 0x0000000000a647fb
+ [tid:436022] [*] Written Bytes: 0x0000000000a6837c
+ [tid:436022] [*] Written Bytes: 0x0000000000a6bf01
+ [tid:436022] [*] Written Bytes: 0x0000000000a6fa4b
+ [tid:436022] [*] Written Bytes: 0x0000000000a735ec
+ [tid:436022] [*] Written Bytes: 0x0000000000a7715d
+ [tid:436022] [*] Written Bytes: 0x0000000000a7ad03
+ [tid:436022] [*] Written Bytes: 0x0000000000a7e870
+ [tid:436022] [*] Written Bytes: 0x0000000000a823d0
+ [tid:436022] [*] Written Bytes: 0x0000000000a85fad
+ [tid:436022] [*] Written Bytes: 0x0000000000a89b92
+ [tid:436022] [*] Written Bytes: 0x0000000000a8d7cd
+ [tid:436022] [*] Written Bytes: 0x0000000000a9135c
+ [tid:436022] [*] Written Bytes: 0x0000000000a94ee5
+ [tid:436022] [*] Written Bytes: 0x0000000000a98a51
+ [tid:436022] [*] Written Bytes: 0x0000000000a9c5df
+ [tid:436022] [*] Written Bytes: 0x0000000000aa013f
+ [tid:436022] [*] Written Bytes: 0x0000000000aa3ca3
+ [tid:436022] [*] Written Bytes: 0x0000000000aa7818
+ [tid:436022] [*] Written Bytes: 0x0000000000aab3f0
+ [tid:436022] [*] Written Bytes: 0x0000000000aaefbf
+ [tid:436022] [*] Written Bytes: 0x0000000000ab2b3b
+ [tid:436022] [*] Written Bytes: 0x0000000000ab66c6
+ [tid:436022] [*] Written Bytes: 0x0000000000aba2c4
+ [tid:436022] [*] Written Bytes: 0x0000000000abde66
+ [tid:436022] [*] Written Bytes: 0x0000000000ac19f6
+ [tid:436022] [*] Written Bytes: 0x0000000000ac55c0
+ [tid:436022] [*] Written Bytes: 0x0000000000ac917d
+ [tid:436022] [*] Written Bytes: 0x0000000000aca57a
+ [tid:436022] [+] jsonify finished
+ [tid:436022] [+] Write JSON to file finished
+ [tid:436022] [=] Completed trace.
