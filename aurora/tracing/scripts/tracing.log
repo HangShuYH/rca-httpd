@@ -1,0 +1,258 @@
+2023-12-12 10:53:01,547 CRITICAL: [!] Temporary directory /tmp/tm/ already exists. Backup its contents and delete it to proceed.
+2023-12-12 10:53:10,289 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:53:10,289 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 10:53:10,296 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:53:10,308 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 10:53:10,309 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/pin -t /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 10:53:10,309 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 10:53:10,309 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/pin -t /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 10:53:10,524 DEBUG: Process errored out for sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/pin -t /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test with Command 'sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/pin -t /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test' returned non-zero exit status 139.
+2023-12-12 10:53:10,524 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:53:10,524 WARNING: Incomplete trace: /tmp/tm/crashes/http_test_trace
+2023-12-12 10:53:10,524 INFO: Deleted incomplete /tmp/tm/crashes/http_test_trace
+2023-12-12 10:53:10,524 DEBUG: Process errored out for sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/pin -t /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test with Command 'sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/pin -t /home/sh/pin-httpd-main/pin-3.15-98253-gb56e429b1-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test' returned non-zero exit status 139.
+2023-12-12 10:53:10,524 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:53:10,524 WARNING: Incomplete trace: /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:53:10,524 INFO: Deleted incomplete /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:53:10,538 INFO: Done processing 0 files in 0.24136781692504883s (on average 2.4136781692504883s per input)
+2023-12-12 10:53:10,538 INFO: STATS: traced 0/2 files in 0.24136781692504883s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:53:10,538 INFO: killall httpd
+2023-12-12 10:53:10,539 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 10:53:10,541 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 10:53:10,542 INFO: Cleanup time: 0.002946615219116211s
+2023-12-12 10:53:10,542 INFO: Total execution time: 0.25255489349365234s
+2023-12-12 10:53:10,542 INFO: Finished tracing run
+2023-12-12 10:55:51,934 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:55:51,934 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 10:55:51,940 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:55:51,951 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 10:55:51,951 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 10:55:51,951 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 10:55:51,951 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 10:55:56,932 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:55:56,932 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:55:56,932 WARNING: Multiple traces (2x) in one file /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:55:56,932 WARNING: Multiple traces (2x) in one file /tmp/tm/crashes/http_test_trace
+2023-12-12 10:55:56,933 INFO: Deleted multiple-trace containing /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:55:56,933 INFO: Deleted multiple-trace containing /tmp/tm/crashes/http_test_trace
+2023-12-12 10:55:56,939 INFO: Done processing 0 files in 4.998660564422607s (on average 49.986605644226074s per input)
+2023-12-12 10:55:56,940 INFO: STATS: traced 0/2 files in 4.998660564422607s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:55:56,940 INFO: killall httpd
+2023-12-12 10:55:56,941 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 10:55:56,944 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 10:55:56,945 INFO: Cleanup time: 0.003676891326904297s
+2023-12-12 10:55:56,945 INFO: Total execution time: 5.011160850524902s
+2023-12-12 10:55:56,946 INFO: Finished tracing run
+2023-12-12 10:58:14,455 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:58:14,455 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 10:58:14,462 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:58:14,475 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 10:58:14,475 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 10:58:14,475 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 10:58:14,475 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 10:58:19,070 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:58:19,070 DEBUG: Zipping into /tmp/tm/non_crashes/http_test_trace.zip
+2023-12-12 10:58:19,115 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:58:19,115 WARNING: Multiple traces (2x) in one file /tmp/tm/crashes/http_test_trace
+2023-12-12 10:58:19,116 INFO: Deleted multiple-trace containing /tmp/tm/crashes/http_test_trace
+2023-12-12 10:58:19,968 DEBUG: Deleted after zipping original: /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:58:19,972 INFO: Done processing 1 files in 5.5102925300598145s (on average 55.102925300598145s per input)
+2023-12-12 10:58:19,972 INFO: STATS: traced 1/2 files in 5.5102925300598145s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:58:19,972 INFO: killall httpd
+2023-12-12 10:58:19,973 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 10:58:19,974 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 10:58:19,975 INFO: Cleanup time: 0.0017430782318115234s
+2023-12-12 10:58:19,975 INFO: Total execution time: 5.520004749298096s
+2023-12-12 10:58:19,975 INFO: Finished tracing run
+2023-12-12 10:58:44,516 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:58:44,516 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 10:58:44,523 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:58:44,535 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 10:58:44,535 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 10:58:44,535 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 10:58:44,535 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 10:58:49,116 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:58:49,116 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:58:49,116 WARNING: Multiple traces (2x) in one file /tmp/tm/crashes/http_test_trace
+2023-12-12 10:58:49,116 WARNING: Multiple traces (2x) in one file /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:58:49,117 INFO: Deleted multiple-trace containing /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:58:49,117 INFO: Deleted multiple-trace containing /tmp/tm/crashes/http_test_trace
+2023-12-12 10:58:49,120 INFO: Done processing 0 files in 4.59669041633606s (on average 45.966904163360596s per input)
+2023-12-12 10:58:49,120 INFO: STATS: traced 0/2 files in 4.59669041633606s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:58:49,120 INFO: killall httpd
+2023-12-12 10:58:49,121 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 10:58:49,122 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 10:58:49,123 INFO: Cleanup time: 0.0021474361419677734s
+2023-12-12 10:58:49,123 INFO: Total execution time: 4.607346534729004s
+2023-12-12 10:58:49,123 INFO: Finished tracing run
+2023-12-12 10:59:05,117 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:59:05,117 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 10:59:05,123 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:59:05,135 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 10:59:05,135 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 10:59:05,135 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 10:59:05,136 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 10:59:09,770 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:59:09,770 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:59:09,770 WARNING: Multiple traces (2x) in one file /tmp/tm/crashes/http_test_trace
+2023-12-12 10:59:09,770 WARNING: Multiple traces (2x) in one file /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:59:09,771 INFO: Deleted multiple-trace containing /tmp/tm/crashes/http_test_trace
+2023-12-12 10:59:09,771 INFO: Deleted multiple-trace containing /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:59:09,775 INFO: Done processing 0 files in 4.65143895149231s (on average 46.514389514923096s per input)
+2023-12-12 10:59:09,775 INFO: STATS: traced 0/2 files in 4.65143895149231s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:59:09,775 INFO: killall httpd
+2023-12-12 10:59:09,776 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 10:59:09,777 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 10:59:09,778 INFO: Cleanup time: 0.0018153190612792969s
+2023-12-12 10:59:09,778 INFO: Total execution time: 4.660562515258789s
+2023-12-12 10:59:09,778 INFO: Finished tracing run
+2023-12-12 10:59:44,107 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:59:44,107 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 10:59:44,114 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:59:44,126 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 10:59:44,126 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 10:59:44,127 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 10:59:44,127 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 10:59:48,709 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:59:48,709 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 10:59:48,709 WARNING: Multiple traces (2x) in one file /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:59:48,709 WARNING: Multiple traces (2x) in one file /tmp/tm/crashes/http_test_trace
+2023-12-12 10:59:48,710 INFO: Deleted multiple-trace containing /tmp/tm/non_crashes/http_test_trace
+2023-12-12 10:59:48,710 INFO: Deleted multiple-trace containing /tmp/tm/crashes/http_test_trace
+2023-12-12 10:59:48,714 INFO: Done processing 0 files in 4.59972882270813s (on average 45.9972882270813s per input)
+2023-12-12 10:59:48,714 INFO: STATS: traced 0/2 files in 4.59972882270813s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 10:59:48,714 INFO: killall httpd
+2023-12-12 10:59:48,715 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 10:59:48,716 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 10:59:48,717 INFO: Cleanup time: 0.0019071102142333984s
+2023-12-12 10:59:48,718 INFO: Total execution time: 4.610691785812378s
+2023-12-12 10:59:48,718 INFO: Finished tracing run
+2023-12-12 11:00:03,009 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:00:03,009 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 11:00:03,016 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:00:03,029 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 11:00:03,029 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 11:00:03,030 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 11:00:03,030 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 11:00:07,571 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 11:00:07,571 DEBUG: Zipping into /tmp/tm/non_crashes/http_test_trace.zip
+2023-12-12 11:00:07,621 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 11:00:07,621 WARNING: Multiple traces (2x) in one file /tmp/tm/crashes/http_test_trace
+2023-12-12 11:00:07,622 INFO: Deleted multiple-trace containing /tmp/tm/crashes/http_test_trace
+2023-12-12 11:00:08,520 DEBUG: Deleted after zipping original: /tmp/tm/non_crashes/http_test_trace
+2023-12-12 11:00:08,523 INFO: Done processing 1 files in 5.506894588470459s (on average 55.06894588470459s per input)
+2023-12-12 11:00:08,523 INFO: STATS: traced 1/2 files in 5.506894588470459s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:00:08,523 INFO: killall httpd
+2023-12-12 11:00:08,524 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 11:00:08,527 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 11:00:08,528 INFO: Cleanup time: 0.003482818603515625s
+2023-12-12 11:00:08,529 INFO: Total execution time: 5.519978284835815s
+2023-12-12 11:00:08,530 INFO: Finished tracing run
+2023-12-12 11:00:20,272 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:00:20,272 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 11:00:20,278 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:00:20,292 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 11:00:20,292 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 11:00:20,292 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 11:00:20,292 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 11:00:24,825 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 11:00:24,825 DEBUG: Zipping into /tmp/tm/crashes/http_test_trace.zip
+2023-12-12 11:00:24,875 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 11:00:24,876 WARNING: Multiple traces (2x) in one file /tmp/tm/non_crashes/http_test_trace
+2023-12-12 11:00:24,877 INFO: Deleted multiple-trace containing /tmp/tm/non_crashes/http_test_trace
+2023-12-12 11:00:25,772 DEBUG: Deleted after zipping original: /tmp/tm/crashes/http_test_trace
+2023-12-12 11:00:25,775 INFO: Done processing 1 files in 5.497023820877075s (on average 54.97023820877075s per input)
+2023-12-12 11:00:25,775 INFO: STATS: traced 1/2 files in 5.497023820877075s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:00:25,775 INFO: killall httpd
+2023-12-12 11:00:25,776 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 11:00:25,778 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 11:00:25,778 INFO: Cleanup time: 0.0019533634185791016s
+2023-12-12 11:00:25,779 INFO: Total execution time: 5.506763219833374s
+2023-12-12 11:00:25,779 INFO: Finished tracing run
+2023-12-12 11:03:50,888 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:03:50,888 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 11:03:50,894 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:03:50,907 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 11:03:50,907 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 11:03:50,907 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 11:03:50,907 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 11:03:55,538 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 11:03:55,539 WARNING: Multiple traces (2x) in one file /tmp/tm/non_crashes/http_test_trace
+2023-12-12 11:03:55,539 INFO: Deleted multiple-trace containing /tmp/tm/non_crashes/http_test_trace
+2023-12-12 11:03:55,540 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 11:03:55,540 WARNING: Multiple traces (2x) in one file /tmp/tm/crashes/http_test_trace
+2023-12-12 11:03:55,541 INFO: Deleted multiple-trace containing /tmp/tm/crashes/http_test_trace
+2023-12-12 11:03:55,548 INFO: Done processing 0 files in 4.653778076171875s (on average 46.53778076171875s per input)
+2023-12-12 11:03:55,549 INFO: STATS: traced 0/2 files in 4.653778076171875s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:03:55,549 INFO: killall httpd
+2023-12-12 11:03:55,551 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 11:03:55,554 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 11:03:55,555 INFO: Cleanup time: 0.004779338836669922s
+2023-12-12 11:03:55,556 INFO: Total execution time: 4.667853116989136s
+2023-12-12 11:03:55,556 INFO: Finished tracing run
+2023-12-12 11:13:42,001 INFO: Using files at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:13:42,001 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 11:13:42,008 INFO: Processing 2 files in 2 subdirs at /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:13:42,021 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 11:13:42,021 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 11:13:42,021 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/crashes/http_test
+2023-12-12 11:13:42,021 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /usr/local/httpd-2.4.49-trace/bin/httpd -X < /home/sh/pin-httpd-main/rca/inputs/non_crashes/http_test
+2023-12-12 11:13:46,608 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 11:13:46,608 DEBUG: Zipping into /tmp/tm/non_crashes/http_test_trace.zip
+2023-12-12 11:13:46,708 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 11:13:46,708 DEBUG: Zipping into /tmp/tm/crashes/http_test_trace.zip
+2023-12-12 11:13:47,582 DEBUG: Deleted after zipping original: /tmp/tm/non_crashes/http_test_trace
+2023-12-12 11:13:47,727 DEBUG: Deleted after zipping original: /tmp/tm/crashes/http_test_trace
+2023-12-12 11:13:47,729 INFO: Done processing 2 files in 5.721368312835693s (on average 57.213683128356934s per input)
+2023-12-12 11:13:47,730 INFO: STATS: traced 2/2 files in 5.721368312835693s with 20 cores for /home/sh/pin-httpd-main/rca/inputs/
+2023-12-12 11:13:47,730 INFO: killall httpd
+2023-12-12 11:13:47,731 INFO: Moving files from /tmp/tm/ to /home/sh/pin-httpd-main/rca/traces/
+2023-12-12 11:13:47,732 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 11:13:47,733 INFO: Cleanup time: 0.002107381820678711s
+2023-12-12 11:13:47,733 INFO: Total execution time: 5.7323081493377686s
+2023-12-12 11:13:47,733 INFO: Finished tracing run
+2023-12-12 15:52:40,932 INFO: Using files at /home/sh/rca_httpd/httpd/evaluation/inputs
+2023-12-12 15:52:40,932 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 15:52:40,940 INFO: Processing 1 files in 2 subdirs at /home/sh/rca_httpd/httpd/evaluation/inputs
+2023-12-12 15:52:40,959 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 15:52:40,960 DEBUG: CMD: sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /home/sh/httpd-2.4.49-trace/bin/httpd -X < /home/sh/rca_httpd/httpd/evaluation/inputs/crashes/http_test
+2023-12-12 15:52:54,442 DEBUG: Process errored out for sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /home/sh/httpd-2.4.49-trace/bin/httpd -X < /home/sh/rca_httpd/httpd/evaluation/inputs/crashes/http_test with Command 'sudo ASAN_OPTIONS=detect_leaks=0 /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /home/sh/httpd-2.4.49-trace/bin/httpd -X < /home/sh/rca_httpd/httpd/evaluation/inputs/crashes/http_test' returned non-zero exit status 1.
+2023-12-12 15:52:54,442 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 15:53:04,176 CRITICAL: [!] Temporary directory /tmp/tm/ already exists. Backup its contents and delete it to proceed.
+2023-12-12 15:53:09,302 INFO: Using files at /home/sh/rca_httpd/httpd/evaluation/inputs
+2023-12-12 15:53:09,302 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 15:53:09,309 INFO: Processing 1 files in 2 subdirs at /home/sh/rca_httpd/httpd/evaluation/inputs
+2023-12-12 15:53:09,321 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 15:53:09,322 DEBUG: CMD: ASAN_OPTIONS=detect_leaks=0 /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /home/sh/httpd-2.4.49-trace/bin/httpd -X < /home/sh/rca_httpd/httpd/evaluation/inputs/crashes/http_test
+2023-12-12 15:53:13,551 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 15:53:13,551 DEBUG: Zipping into /tmp/tm/crashes/http_test_trace.zip
+2023-12-12 15:53:14,591 DEBUG: Deleted after zipping original: /tmp/tm/crashes/http_test_trace
+2023-12-12 15:53:14,595 INFO: Done processing 1 files in 5.285627841949463s (on average 105.71255683898926s per input)
+2023-12-12 15:53:14,595 INFO: STATS: traced 1/1 files in 5.285627841949463s with 20 cores for /home/sh/rca_httpd/httpd/evaluation/inputs
+2023-12-12 15:53:14,595 INFO: killall httpd
+2023-12-12 15:53:14,597 INFO: Moving files from /tmp/tm/ to /home/sh/rca_httpd/httpd/evaluation/traces
+2023-12-12 15:53:14,599 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 15:53:14,600 INFO: Cleanup time: 0.0032961368560791016s
+2023-12-12 15:53:14,600 INFO: Total execution time: 5.297729730606079s
+2023-12-12 15:53:14,601 INFO: Finished tracing run
+2023-12-12 15:53:48,255 INFO: Using files at /home/sh/rca_httpd/httpd/evaluation/inputs
+2023-12-12 15:53:48,256 INFO: Generating temporary directory at /tmp/tm/
+2023-12-12 15:53:48,264 INFO: Processing 2 files in 2 subdirs at /home/sh/rca_httpd/httpd/evaluation/inputs
+2023-12-12 15:53:48,278 DEBUG: subdir was reconstructed as 'non_crashes/', trace_target as http_test'
+2023-12-12 15:53:48,278 DEBUG: subdir was reconstructed as 'crashes/', trace_target as http_test'
+2023-12-12 15:53:48,278 DEBUG: CMD: ASAN_OPTIONS=detect_leaks=0 /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /home/sh/httpd-2.4.49-trace/bin/httpd -X < /home/sh/rca_httpd/httpd/evaluation/inputs/crashes/http_test
+2023-12-12 15:53:48,278 DEBUG: CMD: ASAN_OPTIONS=detect_leaks=0 /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/pin -t /home/sh/rca_httpd/aurora/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer/obj-intel64/aurora_tracer.so -o /tmp/tm/non_crashes/http_test_trace -logfile /tmp/tm/logs/http_test_trace.log -- /home/sh/httpd-2.4.49-trace/bin/httpd -X < /home/sh/rca_httpd/httpd/evaluation/inputs/non_crashes/http_test
+2023-12-12 15:53:52,654 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 15:53:52,654 DEBUG: Zipping into /tmp/tm/non_crashes/http_test_trace.zip
+2023-12-12 15:53:52,755 DEBUG: Checking logfile at /tmp/tm/logs/http_test_trace.log for completeness
+2023-12-12 15:53:52,756 DEBUG: Zipping into /tmp/tm/crashes/http_test_trace.zip
+2023-12-12 15:53:53,734 DEBUG: Deleted after zipping original: /tmp/tm/non_crashes/http_test_trace
+2023-12-12 15:53:53,812 DEBUG: Deleted after zipping original: /tmp/tm/crashes/http_test_trace
+2023-12-12 15:53:53,818 INFO: Done processing 2 files in 5.554024934768677s (on average 55.54024934768677s per input)
+2023-12-12 15:53:53,818 INFO: STATS: traced 2/2 files in 5.554024934768677s with 20 cores for /home/sh/rca_httpd/httpd/evaluation/inputs
+2023-12-12 15:53:53,818 INFO: killall httpd
+2023-12-12 15:53:53,820 INFO: Moving files from /tmp/tm/ to /home/sh/rca_httpd/httpd/evaluation/traces
+2023-12-12 15:53:53,822 INFO: Deleting temporary directory /tmp/tm/
+2023-12-12 15:53:53,823 INFO: Cleanup time: 0.002576112747192383s
+2023-12-12 15:53:53,823 INFO: Total execution time: 5.567347288131714s
+2023-12-12 15:53:53,824 INFO: Finished tracing run
