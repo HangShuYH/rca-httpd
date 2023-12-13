@@ -20,6 +20,7 @@ $HTTPD_INSTALL/bin/httpd -X < $HTTPD_SRC/http_test
 
 ```shell
 # 编译Pin
+export PIN_ROOT="$AURORA_SRC/pin-3.28-98749-g6643ecee5-gcc-linux"
 cd $AURORA_SRC/pin-3.28-98749-g6643ecee5-gcc-linux/source/tools/AuroraTracer
 make obj-intel64/aurora_tracer.so
 ```
@@ -45,7 +46,6 @@ export EVAL_DIR="$(pwd)/evaluation"
 ```
 提取Trace
 ```shell
-export PIN_ROOT="$AURORA_SRC/pin-3.28-98749-g6643ecee5-gcc-linux"
 cd $AURORA_SRC/tracing/scripts
 python3 ./tracing.py "$HTTPD_INSTALL/bin/httpd -X" $EVAL_DIR/inputs $EVAL_DIR/traces
 python3 addr_ranges.py --eval_dir $EVAL_DIR $EVAL_DIR/traces 
